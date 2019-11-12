@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalStyle, Header } from './components';
+import { GlobalStyle, Header, LandingPageSlider } from './components';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <GlobalStyle />
       <div className="App">
         <Header />
+        <LandingPageSlider />
       </div>
     </>
   );
