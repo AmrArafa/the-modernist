@@ -6,6 +6,7 @@ const NavBar = styled.nav`
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: 13px;
     li {
       display: inline-block;
       text-transform: uppercase;
