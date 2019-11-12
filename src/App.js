@@ -1,10 +1,14 @@
 import React from 'react';
+import { GlobalStyle, Header } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <p>the modernist landing page</p>
-    </div>
+    <>
+      <GlobalStyle />
+      <div className="App">
+        <Header />
+      </div>
+    </>
   );
 }
 
