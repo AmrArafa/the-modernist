@@ -4,6 +4,7 @@ import {
   Header,
   LandingPageSlider,
   Services,
+  LatestWork,
 } from './components';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <LandingPageSlider />
         <Services />
+        <LatestWork />
       </div>
     </>
   );
