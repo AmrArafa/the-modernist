@@ -1,5 +1,10 @@
 import React from 'react';
-import { GlobalStyle, Header, LandingPageSlider } from './components';
+import {
+  GlobalStyle,
+  Header,
+  LandingPageSlider,
+  Services,
+} from './components';
 
 function App() {
   return (
@@ -8,6 +13,7 @@ function App() {
       <div className="App">
         <Header />
         <LandingPageSlider />
+        <Services />
       </div>
     </>
   );
