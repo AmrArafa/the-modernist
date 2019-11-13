@@ -39,7 +39,7 @@ const ServiceCardWrapper = styled.div`
 
   p:last-child {
     font-size: 12px;
-    padding: 0 45px;
+    padding: 0 30px;
     margin: 0;
     line-height: 1.3;
   }
