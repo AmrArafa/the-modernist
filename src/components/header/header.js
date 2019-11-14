@@ -74,8 +74,12 @@ const MenuButton = styled.button`
 
 const Header = () => {
 
+  /** The next line declares a new state variable named "isMenuOpened" with an initial value of "false"
+   * setIsMenuOpened is the function used for updating the state
+   */
   const [isMenuOpened, setIsMenuOpened] = useState(false);
 
+  /** This function updates the state variable "isMenuOpened" whenever the menu button is clicked */
   const handleClick = () => {
     setIsMenuOpened(!isMenuOpened);
   }
@@ -88,6 +92,7 @@ const Header = () => {
           <span>Free PSD Website Template</span>
         </HeaderTitle>
         <MenuButton onClick={handleClick} />
+        {/* a prop named "open" is passed to HeaderNav component, where it will be used to change the style of the nav menu */}
         <HeaderNav opened={isMenuOpened} />
       </StyledContainer>
     </HeaderWrapper>

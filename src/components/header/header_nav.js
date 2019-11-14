@@ -56,6 +56,10 @@ const NavBar = styled.nav`
 
 const HeaderNav = (props) => {
   const { opened } = props;
+
+  /** The "opened" prop is used here to add a class of the same name to the NavBar component. That's only if "opened" evaluates to "true",
+   * otherwise no class will be added. Then this class is used to create the menu opening and closing animation
+   */
   return (
     <NavBar className={opened ? 'opened' : ''}>
       <ul>
