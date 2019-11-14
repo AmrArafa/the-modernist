@@ -47,8 +47,6 @@ const WorkCardsWrapper = styled.div`
   justify-content: space-between;
 `;
 
-const workCards = Array(6).fill(<WorkCard />);
-
 const LatestWork = () => {
   return (
     <LatestWorkWrapper>
@@ -57,7 +55,12 @@ const LatestWork = () => {
           <h1>Latest Work</h1>
         </TitleWrapper>
         <WorkCardsWrapper>
-          {workCards}
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
+          <WorkCard />
         </WorkCardsWrapper>
       </Container>
     </LatestWorkWrapper>

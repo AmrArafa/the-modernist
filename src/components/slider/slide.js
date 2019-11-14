@@ -40,11 +40,11 @@ const Slide = () => {
       <SlideContentWrapper>
         <h1>Cursus penati saccum nulla.</h1>
         <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
-        <a href="#!">Read More Here &#187;</a>
+        <a href="#!">Read More Here &raquo;</a>
       </SlideContentWrapper>
       <img src={SlideImage} alt="" />
     </SlideWrapper>
-  )
+  );
 }
 
 export default Slide;

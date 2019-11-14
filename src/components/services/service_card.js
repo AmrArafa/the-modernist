@@ -28,7 +28,7 @@ const ServiceCardWrapper = styled.div`
     transition: color 0.4s, background-color 0.4s;
   }
 
-  h1 {
+  h2 {
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
@@ -60,11 +60,11 @@ const ServiceCard = () => {
     <ServiceCardWrapper>
       <a href="#!">
         <p>120 x 120px</p>
-        <h1>Service Title</h1>
+        <h2>Service Title</h2>
         <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
       </a>
     </ServiceCardWrapper>
-  )
+  );
 }
 
 export default ServiceCard;

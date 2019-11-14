@@ -48,7 +48,7 @@ const WorkCard = () => {
         <p>Lorem Ipsum Dolor</p>
       </a>
     </WorkCardWrapper>
-  )
+  );
 }
 
 export default WorkCard;

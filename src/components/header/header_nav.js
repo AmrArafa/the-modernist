@@ -50,7 +50,7 @@ const HeaderNav = () => {
         </li>
       </ul>
     </NavBar>
-  )
+  );
 }
 
 export default HeaderNav;

@@ -1,19 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import FooterTitle from './footer_title';
+import VisuallyHiddenLabel from '../visually_hidden_label';
 
 const ContactUsForm = styled.form`
-  .visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
   input,
   textarea {
     font-size: 13px;
@@ -50,13 +40,13 @@ const ContactUs = () => {
     <div>
       <FooterTitle>Contact Us</FooterTitle>
       <ContactUsForm action="" method="post" onSubmit={(ev) => ev.preventDefault() }>
-        <label htmlFor="name" className="visually-hidden">Full Name</label>
+        <VisuallyHiddenLabel htmlFor="name">Full Name</VisuallyHiddenLabel>
         <input type="text" name="name" id="name" placeholder="Full Name" required />
-        <label htmlFor="email" className="visually-hidden">Email Address</label>
+        <VisuallyHiddenLabel htmlFor="email">Email Address</VisuallyHiddenLabel>
         <input type="email" name="email" id="email" placeholder="Email Address" required />
-        <label htmlFor="subject" className="visually-hidden">Subject</label>
+        <VisuallyHiddenLabel htmlFor="subject">Subject</VisuallyHiddenLabel>
         <input type="text" name="subject" id="subject" placeholder="Subject" required />
-        <label htmlFor="message" className="visually-hidden">Message</label>
+        <VisuallyHiddenLabel htmlFor="message">Message</VisuallyHiddenLabel>
         <textarea name="message" id="message" rows="4" placeholder="Message" required />
         <button type="submit">Submit</button>
       </ContactUsForm>

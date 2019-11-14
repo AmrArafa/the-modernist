@@ -50,7 +50,7 @@ const Header = () => {
         <HeaderNav />
       </FlexContainer>
     </HeaderWrapper>
-  )
+  );
 }
 
 export default Header;
