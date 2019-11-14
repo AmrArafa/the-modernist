@@ -7,10 +7,22 @@ import VisuallyHiddenTitle from '../visually_hidden_title';
 const ServicesWrapper = styled.section`
   background-color: #660000;
   padding-top: 60px;
+
+  @media (max-width: 767px) {
+    padding: 60px 10px 0 10px;
+  }
 `;
 
 const StyledContainer = styled(Container)`
   display: flex;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 767px) {
+    width: 70vw;
+  }
 `;
 
 const Services = () => {

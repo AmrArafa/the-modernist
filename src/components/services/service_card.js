@@ -6,6 +6,11 @@ const ServiceCardWrapper = styled.div`
 
   + div {
     margin-left: 20px;
+
+    @media (max-width: 960px) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 
   a {
