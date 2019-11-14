@@ -5,6 +5,11 @@ import Container from '../container';
 const StyledContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const CopyRightWrapper = styled.div`
@@ -24,6 +29,12 @@ const CopyRightWrapper = styled.div`
 
     :hover {
       text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 767px) {
+    p + p {
+      margin-top: 15px;
     }
   }
 `;

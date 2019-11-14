@@ -9,6 +9,10 @@ import CopyRight from './copy_right';
 
 const FooterWrapper = styled.footer`
   background-color: #303030;
+
+  @media (max-width: 960px) {
+    padding: 0 10px;
+  }
 `;
 
 const StyledContainer = styled(Container)`
@@ -18,6 +22,18 @@ const StyledContainer = styled(Container)`
 
   > div {
     width: 23%;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+
+    > div {
+      width: 100%;
+    }
+
+    div + div {
+      margin-top: 30px;
+    }
   }
 `;
 
