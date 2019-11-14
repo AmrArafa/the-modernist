@@ -10,6 +10,10 @@ import 'slick-carousel/slick/slick.css';
 const SliderWrapper = styled.section`
   background-color: #290000;
   padding-bottom: 50px;
+
+  @media (max-width: 960px) {
+    padding-top: 100px;
+  }
 `;
 
 const StyledContainer = styled(Container)`
@@ -31,11 +35,27 @@ const StyledContainer = styled(Container)`
   .slick-prev {
     left: -60px;
     background-image: url('${LeftArrow}');
+
+    @media (max-width: 812px) {
+      left: -20px;
+    }
   }
 
   .slick-next {
     right: -60px;
     background-image: url('${RightArrow}');
+
+    @media (max-width: 812px) {
+      right: -20px;
+    }
+  }
+
+  @media (max-width: 812px) {
+    padding: 0 30px;
+
+    .slick-slide img {
+      width: 60vw;
+    }
   }
 `;
 

@@ -5,6 +5,10 @@ import SlideImage from './images/slide_image.png';
 const SlideWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 812px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const SlideContentWrapper = styled.div`
@@ -16,6 +20,11 @@ const SlideContentWrapper = styled.div`
     font-weight: 400;
     line-height: 1;
     margin: 0 0 30px 0;
+
+    @media (max-width: 767px) {
+      font-size: 32px;
+      margin: 15px 0;
+    }
   }
 
   p {
@@ -31,6 +40,12 @@ const SlideContentWrapper = styled.div`
     background-color: #76c38f;
     border-radius: 10px;
     display: inline-block;
+  }
+
+  @media (max-width: 812px) {
+    padding-right: 0;
+    margin-bottom: 15px;
+    text-align: center;
   }
 `;
 
