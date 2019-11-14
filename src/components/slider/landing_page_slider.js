@@ -36,6 +36,10 @@ const StyledContainer = styled(Container)`
     left: -60px;
     background-image: url('${LeftArrow}');
 
+    @media (max-width: 960px) {
+      left: -50px;
+    }
+
     @media (max-width: 812px) {
       left: -20px;
     }
@@ -44,6 +48,10 @@ const StyledContainer = styled(Container)`
   .slick-next {
     right: -60px;
     background-image: url('${RightArrow}');
+
+    @media (max-width: 960px) {
+      right: -50px;
+    }
 
     @media (max-width: 812px) {
       right: -20px;
