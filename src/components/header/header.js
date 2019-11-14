@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Container from '../container';
 import HeaderNav from './header_nav';
+import MenuImage from './images/menu-button.png';
 
 const HeaderWrapper = styled.header`
   background-color: #290000;
@@ -18,13 +19,26 @@ const HeaderWrapper = styled.header`
     top: 0;
     left: 0;
   }
+
+  @media (max-width: 960px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+  }
 `;
 
-const FlexContainer = styled(Container)`
+const StyledContainer = styled(Container)`
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 960px) {
+    padding: 0 10px;
+  }
 `;
 
 const HeaderTitle = styled.h1`
@@ -39,16 +53,43 @@ const HeaderTitle = styled.h1`
   }
 `;
 
+const MenuButton = styled.button`
+  display: none;
+
+  @media (max-width: 960px) {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    background: url('${MenuImage}') no-repeat;
+    background-size: contain;
+    padding: 0;
+
+    :focus {
+      outline: 0;
+    }
+  }
+`;
+
 const Header = () => {
+
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
+
+  const handleClick = () => {
+    setIsMenuOpened(!isMenuOpened);
+  }
+
   return (
     <HeaderWrapper>
-      <FlexContainer>
+      <StyledContainer>
         <HeaderTitle>
           The Modernist
           <span>Free PSD Website Template</span>
         </HeaderTitle>
-        <HeaderNav />
-      </FlexContainer>
+        <MenuButton onClick={handleClick} />
+        <HeaderNav opened={isMenuOpened} />
+      </StyledContainer>
     </HeaderWrapper>
   );
 }
