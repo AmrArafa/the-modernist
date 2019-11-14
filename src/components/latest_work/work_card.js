@@ -12,11 +12,12 @@ const WorkCardWrapper = styled.div`
   }
 
   a {
-    display: inline-block;
+    display: block;
   }
 
   img {
     vertical-align: middle;
+    width: 100%;
   }
 
   p {
@@ -36,6 +37,18 @@ const WorkCardWrapper = styled.div`
     border-color: #76c38f;
     p {
       opacity: 0;
+    }
+  }
+
+  @media (max-width: 899px) {
+    :nth-child(n+3) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    + div {
+      margin-top: 15px;
     }
   }
 `;

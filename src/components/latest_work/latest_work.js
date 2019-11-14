@@ -22,6 +22,10 @@ const LatestWorkWrapper = styled.section`
     position: relative;
     z-index: 1;
   }
+
+  @media (max-width: 960px) {
+    padding: 40px 10px 60px 10px;
+  }
 `;
 
 const TitleWrapper = styled.div`
@@ -45,6 +49,12 @@ const WorkCardsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 767px) {
+    display: block;
+    width: 70vw;
+    margin: 0 auto;
+  }
 `;
 
 const LatestWork = () => {
